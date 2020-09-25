@@ -4,7 +4,8 @@ System.out.println("Welcome to Employee Wage Computation Program on Master Branc
 int hrs=0;
 int wage=0;
 int monWage=0;
-for(int day =0; day < 20; day++){
+int day=1;
+while(day <=20 && hrs<=100){
 int attend =(int)Math.floor(Math.random()*10)%3;
 switch(attend){
 case 1: hrs=8;break;
@@ -12,5 +13,6 @@ case 2: hrs=4;break;
 default: hrs=0;
 }
 wage=hrs*20;
-monWage=monWage+wage;}
+monWage=monWage+wage;
+day++;hrs+=hrs;}
 System.out.println("Monthly Emp Wage: "+monWage);}}
