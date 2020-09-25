@@ -4,9 +4,10 @@ System.out.println("Welcome to Employee Wage Computation Program on Master Branc
 int hrs=0;
 int wage=0;
 int attend =(int)Math.floor(Math.random()*10)%3;
-if(attend==1){ hrs=8;}
-else if(attend==2)hrs=4;
-
-else System.out.println("Emp is absent");
+switch(attend){
+case 1: hrs=8;break;
+case 2: hrs=4;break;
+default: hrs=0;
+}
 wage=hrs*20;
 System.out.println("Emp Wage: "+wage);}}
